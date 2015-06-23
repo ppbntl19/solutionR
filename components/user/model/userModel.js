@@ -1,5 +1,5 @@
 var utils = require('mongoose-utils'),
-    bcrypt = require('bcrypt'),
+    bcrypt = require('bcryptjs'),
     mongoose = require('mongoose');
 
 module.exports = function() {
