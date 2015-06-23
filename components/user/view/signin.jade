@@ -1,0 +1,18 @@
+extends ../../../shared/views/layout
+
+block content
+  section.smallColumn.centered.pushDown
+    p.tac: a.logo.block(href='/')
+      span.is_hidden base12
+
+    form(action='/signin', method='post')
+      input.block(type='email', name='email', placeholder='email', value=querystring.email)
+      input.block(type='password', name='password', placeholder='password', value=querystring.password)
+      .button-bar
+        button(type='submit') Sign in
+      .button-bar
+        a.micro(href='/register') Register
+        a.micro(href='/reset') Reset password?
+
+append scripts
+  script(src="/scripts/user.signin.js")
