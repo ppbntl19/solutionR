@@ -25,6 +25,7 @@ var emailer       = require('./lib/emailer');
 
 var user        = require('./components/user');
 var dashboard   = require('./components/dashboard');
+var dashboard   = require('./components/messageAPI');
 var errors      = require('./components/errors');
 
 

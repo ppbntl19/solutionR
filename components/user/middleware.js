@@ -32,8 +32,10 @@ module.exports = function(app) {
     },
 
     doRegister: function(req, res, next) {
-      User.create(req.body, function(err) {
+      var user = new User(req.body)
+      user.save(function(err) {
         if (err) {
+          console.log(err);
           var err_message = ((err+"").indexOf("duplicate key error") > -1) ? "That email address is already registered." : err;
 
           if (err.name == 'ValidationError') {

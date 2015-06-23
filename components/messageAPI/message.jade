@@ -1,0 +1,24 @@
+extends ../../shared/views/layout
+
+block title
+  | Contact Us
+
+block content
+
+
+
+      table.table.table-striped
+        thead
+          tr
+            th CreatedOn
+            th Name
+             th Title
+            th Text
+        tbody
+         each post, i in data
+          tr
+            td= post.createdOn
+            td= post.name
+             td= post.title
+              td= post.text
+         

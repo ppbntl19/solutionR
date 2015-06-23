@@ -1,40 +1,42 @@
 {
-    "name": "b12prj",
-    "version": "0.0.2",
-    "directories": {},
-    "engines": {
-        "node": ">=0.10.0",
-        "npm": ">=1.1"
-    },
-    "dependencies": {
-        "express": "3.4.1",
-        "connect": "2.9.1",
-        "connect-timeout": "0.0.1",
-        "connect-redis": "1.4.5",
-        "connect-parallel": "0.0.3",
-        "jade": "0.35.0",
-        "stylus": "0.38.0",
-        "mongoose": "~4.0.4",
-        "mongoose-utils": "0.0.2",
-        "redis": "0.8.6",
-        "bcryptjs": "*",
-        "email": "0.2.6",
-        "nib": "1.0.1",
-        "async": "0.2.9",
-        "underscore": "1.5.2",
-        "newrelic": "latest"
-    },
-    "devDependencies": {
-        "mocha": "latest",
-        "should": "latest",
-        "grunt": "latest",
-        "bower": "latest",
-        "grunt-contrib-clean": "latest",
-        "grunt-contrib-copy": "latest",
-        "grunt-contrib-concat": "latest",
-        "grunt-contrib-uglify": "latest"
-    },
-    "scripts": {
-        "lock": "scripts/module_lock.js"
-    }
+  "name": "b12prj",
+  "version": "0.0.2",
+  "directories": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.1"
+  },
+  "dependencies": {
+    "async": "0.2.9",
+    "bcrypt": "*",
+    "bcryptjs": "^2.1.0",
+    "connect": "2.9.1",
+    "connect-parallel": "0.0.3",
+    "connect-redis": "1.4.5",
+    "connect-timeout": "0.0.1",
+    "email": "0.2.6",
+    "express": "3.4.1",
+    "jade": "0.35.0",
+    "lodash": "^3.9.3",
+    "mongoose": "~4.0.4",
+    "mongoose-utils": "0.0.2",
+    "newrelic": "latest",
+    "nib": "1.0.1",
+    "redis": "0.8.6",
+    "stylus": "0.38.0",
+    "underscore": "1.5.2"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "should": "latest",
+    "grunt": "latest",
+    "bower": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify": "latest"
+  },
+  "scripts": {
+    "lock": "scripts/module_lock.js"
+  }
 }

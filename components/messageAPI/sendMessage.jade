@@ -1,0 +1,19 @@
+extends ../../shared/views/layout
+
+block title
+  | Contact Us
+
+block content
+
+ h2.form-signin-heading Pleae Post Your Message
+ 
+  
+
+   form(action='/postMessage', method='post')
+      input.block(type='text', name='title', placeholder='title')
+      input.block(type='text', name='name', placeholder='Full Name')
+      input.block(type='email', name='email', placeholder='email')
+      textarea.block(cols="38", rows="5" name='text', placeholder='Please write your message here')
+      .button-bar
+      button(type='submit') Submit!
+            
