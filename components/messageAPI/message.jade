@@ -7,7 +7,7 @@ block content
 
 
 
-      table.table.table-striped
+      table.table.table-striped.table-hover
         thead
           tr
             th CreatedOn
@@ -16,9 +16,11 @@ block content
             th Text
         tbody
          each post, i in data
-          tr
+          tr(class="info")
             td= post.createdOn
             td= post.name
              td= post.title
               td= post.text
-         
+                td
+                 a(class=' btn btn-info', href='#') Edit
+       a(class=' btn btn-primary', href='/message') Add New
